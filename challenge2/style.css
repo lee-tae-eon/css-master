@@ -1,0 +1,70 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color: #dde1d4;
+  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 650px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+.grid-content {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: 100px 400px 350px;
+  grid-template-areas:
+    "header header header"
+    "content content aside"
+    "footer footer footer";
+}
+.header {
+  background-color: #000;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  color: white;
+  font-size: 12px;
+  align-items: flex-end;
+  justify-items: center;
+  padding-bottom: 20px;
+  line-height: 16px;
+  font-weight: 600;
+}
+.content {
+  background-color: #f14011;
+  grid-area: content;
+  display: grid;
+}
+.content .bad {
+  text-align: left;
+  align-self: flex-end;
+  font-size: 170px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.aside {
+  background-color: #f14011;
+  grid-area: aside;
+}
+.footer {
+  background-color: #f14011;
+  grid-area: footer;
+  display: grid;
+  grid-template-rows: repeat(2, 50%);
+}
+.footer .religion {
+  font-size: 185px;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+}
+.footer .with {
+  align-self: center;
+  margin-left: 10px;
+  color: #e0dcc9;
+  font-size: 3vmax;
+  font-weight: 500;
+}
