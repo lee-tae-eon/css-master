@@ -1,0 +1,71 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+
+body {
+  background-color: #dde1d4;
+  /* padding:15px; */
+  font-family: "Rakkas", cursive;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+.grid {
+  color: white;
+  display: grid;
+  height: 100vh;
+  grid-template:
+    "first-section second-section" 1fr
+    "third-section fourth-section" 1fr;
+}
+.main-section .main-text {
+  display: grid;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+  font-size: 7vmax;
+}
+
+.main-section:first-child {
+  background-color: #dae7de;
+  grid-area: first-section;
+}
+.main-section:nth-child(2) {
+  background-color: #2b8a69;
+  grid-area: second-section;
+}
+.main-section:nth-child(3) {
+  background-color: #f44606;
+  grid-area: third-section;
+}
+.main-section:nth-child(4) {
+  background-color: white;
+  grid-area: fourth-section;
+  display: grid;
+  grid-template:
+    "first-mini second-mini" 1fr
+    "third-mini fourth-mini" 1fr;
+}
+.mini-section:first-child {
+  background-color: #f7abc5;
+  grid-area: first-mini;
+}
+.mini-section:nth-child(2) {
+  background-color: #5f5fa9;
+  grid-area: second-mini;
+}
+.mini-section:nth-child(3) {
+  background-color: #fbc129;
+  grid-area: third-mini;
+}
+.mini-section:nth-child(4) {
+  background-color: #f67374;
+  grid-area: fourth-mini;
+}
+
+.mini-section .mini-text {
+  font-size: 3vmax;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
