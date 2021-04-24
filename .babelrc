@@ -1,0 +1,8 @@
+// 20210425005801
+// https://raw.githubusercontent.com/nomadcoders/scss-masterclass/master/.babelrc
+
+{
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
