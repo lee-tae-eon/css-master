@@ -1,0 +1,67 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+/* 네비게이션  */
+.header__nav {
+  display: grid;
+  width: 100%;
+  height: 50px;
+  grid-template-columns: repeat(5, 1fr);
+  position: fixed;
+  color: white;
+  background-color: rgba(158, 182, 166, 1);
+}
+.nav__columns {
+  display: flex;
+  font-size: 0.8vw;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 0 20px;
+}
+.nav__columns:last-child {
+  border-right: none;
+}
+
+/* 메인 */
+.main-screen {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: 400px;
+  grid-auto-rows: 400px;
+}
+.kimchi-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 0 20px;
+}
+.kimchi-section .image-wrapper {
+  width: 70%;
+  height: 60%;
+}
+.kimchi-section .image-wrapper img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.kimchi-title {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  color: black;
+}
