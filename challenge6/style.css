@@ -123,8 +123,6 @@ body {
   font-style: italic;
   writing-mode: vertical-lr;
   text-orientation: upright;
-
-  /* transform: rotateY(1deg); */
 }
 .nav-left {
   font-size: 12px;
